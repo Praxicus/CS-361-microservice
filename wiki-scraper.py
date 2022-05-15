@@ -31,5 +31,8 @@ def scrape():
 	# for para in info:
 	# 	f.write(para.get_text())
 	# 	f.write('\n')
-		
+
 	return json.dumps(wiki)
+		
+if __name__ == '__main__':
+	app.run(host='127.0.0.1', port=3000, debug=True)
